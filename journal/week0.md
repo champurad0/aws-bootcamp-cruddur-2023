@@ -5,35 +5,35 @@
 1. Destroy root account credentials, MFA and IAM role
 Login to the AWS console and navigate tothe 'IAM service'
 
-![IAM Security Recommendations](image.png)
+![IAM Security Recommendations](/journal/zassets/image.png)
 Since my root user already has MFA, I'll create a new user and set up MFA on that account. 
 
-![IAM User / Create User](image-1.png)
+![IAM User / Create User](/journal/zassets/image-1.png)
 I'll start by creating a user 
 Access management -> Users -> Create user
 
-![Alt text](image-3.png)
+![Alt text](/journal/zassets/image-3.png)
 Then I'll name the account, provide console access, and set the password. 
 When dealing with passwords I like to issue a password and then require the user to change it upon sign in. 
 ex. using 'Defaultpassword2024!'
 
-![Admin Permissions](image-4.png)
+![Admin Permissions](/journal/zassets/image-4.png)
 I'll assign this user with admin access since I'll be using this user for the rest of the class. 
 
-![Review and Create](image-5.png)
+![Review and Create](/journal/zassets/image-5.png)
 Then I'll create the user.
 
-![Retrieve Password](image-6.png)
-![Login to Console](image-7.png)
+![Retrieve Password](/journal/zassets/image-6.png)
+![Login to Console](/journal/zassets/image-7.png)
 Now I'll navigate to the console sign in URL to sign in, change password and set up MFA on this account 
 
-![Change password](image-8.png)
+![Change password](/journal/zassets/image-8.png)
 Here ill change the password
 
-![Security Creds](image-9.png)
-![assign mfa](image-11.png)
-![slect mfa](image-10.png)
-![set up device](image-12.png)
+![Security Creds](/journal/zassets/image-9.png)
+![assign mfa](/journal/zassets/image-11.png)
+![slect mfa](/journal/zassets/image-10.png)
+![set up device](/journal/zassets/image-12.png)
 I'll then navigate to the security credentials and add google authenticater as my MFA device. 
 
 Now that I have a new user with Admin access I won't have to login as my root user. 
